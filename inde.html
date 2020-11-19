@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Hui</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,15 +15,15 @@
 
         <label>
             <input type="radio" name="radio-choice" value="first"> Первый
-        </label>
+        </label> <br>
         <label>
-            <input type="radio" name="radio-choice" value="second"> Второй
+            <input type="radio" name="radio-choice" value="second" checked> Второй
         </label>
     </fieldset>
 
     <fieldset>
         <legend>Frame</legend>
-        <img src="img/Logo_BSU.jpg" alt="BSU Logo"/>
+        <img id="logo" src="img/Logo_BSU.jpg" alt="BSU Logo"/> <br>
 
         <input type="text" id="link" name="img-link">
         <button type="button">Ok</button>
@@ -32,12 +33,12 @@
         <legend>Checkbox</legend>
 
         <label for="first_choice">
-            <input type="checkbox" name="first" id="first_choice"> Первый
-        </label>
+            <input type="checkbox" name="first" id="first_choice" checked> Первый
+        </label> <br>
 
         <label for="second_choice">
             <input type="checkbox" name="second" id="second_choice"> Второй
-        </label>
+        </label> <br>
 
         <label for="third_choice">
             <input type="checkbox" name="third" id="third_choice"> Третий
@@ -76,8 +77,13 @@
         <legend>Счетчик</legend>
 
         <!-- number -->
-        <input type="number" min="0" max="5">
+        <input type="number" min="0" max="5" placeholder="2">
     </fieldset>
+
+    <div class="wrapper">
+        <input type="submit" value="Ок">
+        <input type="reset" value="Отмена">
+    </div>
 
 
 </form>
